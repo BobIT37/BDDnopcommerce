@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="7.064">
+<testcase classname="nopcommerce admin login" name="Verify valid login from admin login page" time="6.957">
+<system-out><![CDATA[Given I am on admin login page..............................................passed
+When I enter admin@yourstore.com into username field on the messenger page..passed
+And I enter admin into password field on the messenger page.................passed
+And I click on login button on messenger page...............................passed
+Then I verify invalid login message on sign in page.........................passed
+]]></system-out>
+</testcase>
+</testsuite>

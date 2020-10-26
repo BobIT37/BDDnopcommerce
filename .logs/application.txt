@@ -1,0 +1,28 @@
+2020-10-26 09:12:55,690  INFO [main] SharedSD:27 - **************************
+2020-10-26 09:12:55,691  INFO [main] SharedSD:28 - Test setup is starting...!
+2020-10-26 09:13:01,846  INFO [main] SharedSD:46 - Cleanup..!
+2020-10-26 09:13:01,846  INFO [main] SharedSD:47 - Test was completed...!
+2020-10-26 09:13:01,847  INFO [main] SharedSD:49 - ************************
+2020-10-26 09:13:33,472  INFO [main] SharedSD:27 - **************************
+2020-10-26 09:13:33,474  INFO [main] SharedSD:28 - Test setup is starting...!
+2020-10-26 09:13:39,637  INFO [main] SharedSD:46 - Cleanup..!
+2020-10-26 09:13:39,638  INFO [main] SharedSD:47 - Test was completed...!
+2020-10-26 09:13:39,638  INFO [main] SharedSD:49 - ************************
+2020-10-26 09:14:30,765  INFO [main] SharedSD:27 - **************************
+2020-10-26 09:14:30,766  INFO [main] SharedSD:28 - Test setup is starting...!
+2020-10-26 09:14:37,496  INFO [main] SharedSD:46 - Cleanup..!
+2020-10-26 09:14:37,496  INFO [main] SharedSD:47 - Test was completed...!
+2020-10-26 09:14:37,497  INFO [main] SharedSD:49 - ************************
+2020-10-26 09:18:00,842  INFO [main] SharedSD:27 - **************************
+2020-10-26 09:18:00,843  INFO [main] SharedSD:28 - Test setup is starting...!
+2020-10-26 09:18:08,552  INFO [main] SharedSD:46 - Cleanup..!
+2020-10-26 09:18:08,552  INFO [main] SharedSD:47 - Test was completed...!
+2020-10-26 09:18:08,552  INFO [main] SharedSD:49 - ************************
+2020-10-26 09:18:56,285  INFO [main] SharedSD:27 - **************************
+2020-10-26 09:18:56,286  INFO [main] SharedSD:28 - Test setup is starting...!
+2020-10-26 09:19:20,155  INFO [main] SharedSD:49 - ************************
+2020-10-26 09:20:26,753  INFO [main] SharedSD:27 - **************************
+2020-10-26 09:20:26,755  INFO [main] SharedSD:28 - Test setup is starting...!
+2020-10-26 09:20:33,547  INFO [main] SharedSD:46 - Cleanup..!
+2020-10-26 09:20:33,548  INFO [main] SharedSD:47 - Test was completed...!
+2020-10-26 09:20:33,548  INFO [main] SharedSD:49 - ************************
