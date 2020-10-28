@@ -10,6 +10,7 @@ public class LoginPage extends ElementUtil{
     private By logout = By.xpath("//a[contains(text(),'Logout')]");
     private By header = By.xpath("//h1[contains(text(),'Dashboard')]");
     private By adminHeader = By.xpath("//h1[contains(text(),'Admin area demo')]");
+    private By errorMessage = By.xpath("//div[contains(text(), 'Login was unsuccessful.')]");
 
     public void enterEmail(String enterEmail){
         clear(emailTextField);
@@ -33,6 +34,9 @@ public class LoginPage extends ElementUtil{
         return getTextFromElement(header);
     }
 
+    public String getErrorMessage(){
+        return getTextFromElement(errorMessage);
+    }
 
     public void clickOnLogout(){
         clickOn(logout);

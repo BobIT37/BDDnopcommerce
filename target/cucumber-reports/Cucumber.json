@@ -11,24 +11,24 @@
         "steps": [
           {
             "result": {
-              "duration": 27000000,
+              "duration": 28000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "I am on admin login page",
+            "name": "I am on admin panel page",
             "match": {
-              "location": "stepDefinition.LoginPageSD.iAmOnAdminLoginPage()"
+              "location": "stepDefinition.LoginParametersSD.iAmOnAdminLoginPage()"
             },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2020-10-26T13:20:26.676Z",
+        "start_timestamp": "2020-10-28T02:16:35.493Z",
         "before": [
           {
             "result": {
-              "duration": 2997000000,
+              "duration": 3327000000,
               "status": "passed"
             },
             "match": {
@@ -36,14 +36,14 @@
             }
           }
         ],
-        "line": 9,
-        "name": "Verify valid login from admin login page",
+        "line": 19,
+        "name": "Verify invalid login for multiple users",
         "description": "",
-        "id": "nopcommerce-admin-login;verify-valid-login-from-admin-login-page",
+        "id": "login-feature;verify-invalid-login-for-multiple-users;;2",
         "after": [
           {
             "result": {
-              "duration": 87000000,
+              "duration": 76000000,
               "status": "passed"
             },
             "match": {
@@ -52,59 +52,59 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 91000000,
+              "duration": 88000000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "I enter admin@yourstore.com into username field on the messenger page",
+            "line": 11,
+            "name": "I enter bob@gmail.com into username text fields on admin login page",
             "match": {
               "arguments": [
                 {
-                  "val": "admin@yourstore.com",
+                  "val": "bob@gmail.com",
                   "offset": 8
                 },
                 {
                   "val": "username",
-                  "offset": 33
+                  "offset": 27
                 }
               ],
-              "location": "stepDefinition.LoginPageSD.enterDataUserAndPAssField(java.lang.String,java.lang.String)"
+              "location": "stepDefinition.LoginParametersSD.enterDataUserAndPAssField(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 64000000,
+              "duration": 71000000,
               "status": "passed"
             },
-            "line": 11,
-            "name": "I enter admin into password field on the messenger page",
+            "line": 12,
+            "name": "I enter test123 into password text fields on admin login page",
             "match": {
               "arguments": [
                 {
-                  "val": "admin",
+                  "val": "test123",
                   "offset": 8
                 },
                 {
                   "val": "password",
-                  "offset": 19
+                  "offset": 21
                 }
               ],
-              "location": "stepDefinition.LoginPageSD.enterDataUserAndPAssField(java.lang.String,java.lang.String)"
+              "location": "stepDefinition.LoginParametersSD.enterDataUserAndPAssField(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2466000000,
+              "duration": 278000000,
               "status": "passed"
             },
-            "line": 12,
-            "name": "I click on login button on messenger page",
+            "line": 13,
+            "name": "I click on login button on admin login page",
             "match": {
               "arguments": [
                 {
@@ -112,19 +112,19 @@
                   "offset": 11
                 }
               ],
-              "location": "stepDefinition.LoginPageSD.clickOnButton(java.lang.String)"
+              "location": "stepDefinition.LoginParametersSD.clickOnButton(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1178000000,
+              "duration": 20000000,
               "status": "passed"
             },
-            "line": 13,
-            "name": "I verify invalid login message on sign in page",
+            "line": 14,
+            "name": "I verify that I used invalid credentials",
             "match": {
-              "location": "stepDefinition.LoginPageSD.verifyValidLogin()"
+              "location": "stepDefinition.LoginParametersSD.verifyValidLogin()"
             },
             "keyword": "Then "
           }
@@ -134,16 +134,288 @@
             "name": "@web"
           },
           {
-            "name": "@login"
+            "name": "@parameters"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 22000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on admin panel page",
+            "match": {
+              "location": "stepDefinition.LoginParametersSD.iAmOnAdminLoginPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-28T02:16:39.445Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2806000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.SharedSD.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Verify invalid login for multiple users",
+        "description": "",
+        "id": "login-feature;verify-invalid-login-for-multiple-users;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 78000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.SharedSD.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 88000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I enter jim@gmail.com into username text fields on admin login page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jim@gmail.com",
+                  "offset": 8
+                },
+                {
+                  "val": "username",
+                  "offset": 27
+                }
+              ],
+              "location": "stepDefinition.LoginParametersSD.enterDataUserAndPAssField(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 65000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I enter test456 into password text fields on admin login page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test456",
+                  "offset": 8
+                },
+                {
+                  "val": "password",
+                  "offset": 21
+                }
+              ],
+              "location": "stepDefinition.LoginParametersSD.enterDataUserAndPAssField(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 653000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click on login button on admin login page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "login button",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinition.LoginParametersSD.clickOnButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I verify that I used invalid credentials",
+            "match": {
+              "location": "stepDefinition.LoginParametersSD.verifyValidLogin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@web"
+          },
+          {
+            "name": "@parameters"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 18000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on admin panel page",
+            "match": {
+              "location": "stepDefinition.LoginParametersSD.iAmOnAdminLoginPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-28T02:16:43.183Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2927000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.SharedSD.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Verify invalid login for multiple users",
+        "description": "",
+        "id": "login-feature;verify-invalid-login-for-multiple-users;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 79000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.SharedSD.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 87000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I enter liz@gmail.com into username text fields on admin login page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "liz@gmail.com",
+                  "offset": 8
+                },
+                {
+                  "val": "username",
+                  "offset": 27
+                }
+              ],
+              "location": "stepDefinition.LoginParametersSD.enterDataUserAndPAssField(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 67000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I enter 123Test into password text fields on admin login page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123Test",
+                  "offset": 8
+                },
+                {
+                  "val": "password",
+                  "offset": 21
+                }
+              ],
+              "location": "stepDefinition.LoginParametersSD.enterDataUserAndPAssField(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 687000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click on login button on admin login page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "login button",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinition.LoginParametersSD.clickOnButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I verify that I used invalid credentials",
+            "match": {
+              "location": "stepDefinition.LoginParametersSD.verifyValidLogin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@web"
+          },
+          {
+            "name": "@parameters"
           }
         ]
       }
     ],
-    "name": "nopcommerce admin login",
+    "name": "Login Feature",
     "description": "",
-    "id": "nopcommerce-admin-login",
+    "id": "login-feature",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/login.feature",
+    "uri": "file:src/test/resources/features/loginparameters.feature",
     "tags": [
       {
         "name": "@web",
